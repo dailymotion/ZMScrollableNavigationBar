@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jhi-RM-s1P">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="ZMScrollableNavigationBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YUc-z6-d1n">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WheresWallyAtWembley_6.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="llp-Yh-PtY">
+                                        <rect key="frame" x="0.0" y="0.0" width="2953" height="2088"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="llp-Yh-PtY" secondAttribute="trailing" id="4uY-5t-30A"/>
+                                    <constraint firstAttribute="bottom" secondItem="llp-Yh-PtY" secondAttribute="bottom" id="W1w-My-evB"/>
+                                    <constraint firstItem="llp-Yh-PtY" firstAttribute="top" secondItem="YUc-z6-d1n" secondAttribute="top" id="dwj-QN-Ybb"/>
+                                    <constraint firstItem="llp-Yh-PtY" firstAttribute="leading" secondItem="YUc-z6-d1n" secondAttribute="leading" id="hNT-te-0hu"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="LyO-YP-VGZ"/>
+                                </connections>
+                            </scrollView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2vc-vr-eiJ">
+                                <rect key="frame" x="0.0" y="64" width="600" height="29"/>
+                                <color key="backgroundColor" red="1" green="0.7843137255" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2vc-vr-eiJ" secondAttribute="trailing" id="6Dv-Yu-2jR"/>
+                            <constraint firstItem="2vc-vr-eiJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="6ND-Gf-ux3"/>
+                            <constraint firstItem="2vc-vr-eiJ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="ZLN-Gq-3hC"/>
+                            <constraint firstAttribute="trailing" secondItem="YUc-z6-d1n" secondAttribute="trailing" id="Zce-Dk-I95"/>
+                            <constraint firstItem="YUc-z6-d1n" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="ddS-5q-8gb"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="bottom" secondItem="YUc-z6-d1n" secondAttribute="bottom" id="eIT-bM-gyS"/>
+                            <constraint firstItem="YUc-z6-d1n" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="top" id="lzy-dr-HyI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qxj-7Q-w7E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2209" y="1140"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="DIx-w7-HrE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mFr-M1-Zyr" customClass="ZMScrollableNavigationController" customModule="ZMScrollableNavigationBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ywE-k6-dnv"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mio-az-nYp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="hFS-qE-eXg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JtK-he-xI1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1377" y="1140"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="NAF-oe-E4Z">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="jhi-RM-s1P" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Hdp-KW-bji">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="mFr-M1-Zyr" kind="relationship" relationship="viewControllers" id="cZl-2w-j3g"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Fh-oT-S3U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="1140"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WheresWallyAtWembley_6.jpg" width="2953" height="2088"/>
+    </resources>
+</document>

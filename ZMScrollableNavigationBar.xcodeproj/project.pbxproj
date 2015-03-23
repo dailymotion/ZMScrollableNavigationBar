@@ -7,46 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		872CE5E41AC0B4AE0021143F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872CE5E31AC0B4AE0021143F /* AppDelegate.swift */; };
-		872CE5E61AC0B4AE0021143F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872CE5E51AC0B4AE0021143F /* ViewController.swift */; };
-		872CE5E91AC0B4AE0021143F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 872CE5E71AC0B4AE0021143F /* Main.storyboard */; };
-		872CE5EB1AC0B4AE0021143F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 872CE5EA1AC0B4AE0021143F /* Images.xcassets */; };
-		872CE5EE1AC0B4AE0021143F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 872CE5EC1AC0B4AE0021143F /* LaunchScreen.xib */; };
-		872CE5FA1AC0B4AE0021143F /* ZMScrollableNavigationBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872CE5F91AC0B4AE0021143F /* ZMScrollableNavigationBarTests.swift */; };
+		872CE6131AC0D8D10021143F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872CE6081AC0D8D10021143F /* AppDelegate.swift */; };
+		872CE6141AC0D8D10021143F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 872CE6091AC0D8D10021143F /* LaunchScreen.xib */; };
+		872CE6151AC0D8D10021143F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 872CE60B1AC0D8D10021143F /* Main.storyboard */; };
+		872CE6161AC0D8D10021143F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 872CE60D1AC0D8D10021143F /* Images.xcassets */; };
+		872CE6171AC0D8D10021143F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 872CE60E1AC0D8D10021143F /* Info.plist */; };
+		872CE6181AC0D8D10021143F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872CE60F1AC0D8D10021143F /* ViewController.swift */; };
+		872CE61A1AC0D8D10021143F /* ZMScrollableNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872CE6121AC0D8D10021143F /* ZMScrollableNavigationController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		872CE5F41AC0B4AE0021143F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 872CE5D61AC0B4AE0021143F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 872CE5DD1AC0B4AE0021143F;
-			remoteInfo = ZMScrollableNavigationBar;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		872CE5DE1AC0B4AE0021143F /* ZMScrollableNavigationBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZMScrollableNavigationBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		872CE5E21AC0B4AE0021143F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		872CE5E31AC0B4AE0021143F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		872CE5E51AC0B4AE0021143F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		872CE5E81AC0B4AE0021143F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		872CE5EA1AC0B4AE0021143F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		872CE5ED1AC0B4AE0021143F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		872CE5F31AC0B4AE0021143F /* ZMScrollableNavigationBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZMScrollableNavigationBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		872CE5F81AC0B4AE0021143F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		872CE5F91AC0B4AE0021143F /* ZMScrollableNavigationBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZMScrollableNavigationBarTests.swift; sourceTree = "<group>"; };
+		872CE6081AC0D8D10021143F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		872CE60A1AC0D8D10021143F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		872CE60C1AC0D8D10021143F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		872CE60D1AC0D8D10021143F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		872CE60E1AC0D8D10021143F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		872CE60F1AC0D8D10021143F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		872CE6121AC0D8D10021143F /* ZMScrollableNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZMScrollableNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		872CE5DB1AC0B4AE0021143F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		872CE5F01AC0B4AE0021143F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -59,8 +41,8 @@
 		872CE5D51AC0B4AE0021143F = {
 			isa = PBXGroup;
 			children = (
-				872CE5E01AC0B4AE0021143F /* ZMScrollableNavigationBar */,
-				872CE5F61AC0B4AE0021143F /* ZMScrollableNavigationBarTests */,
+				872CE6071AC0D8D10021143F /* Test Project */,
+				872CE6111AC0D8D10021143F /* ZMScrollableNavigationBar */,
 				872CE5DF1AC0B4AE0021143F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,45 +51,35 @@
 			isa = PBXGroup;
 			children = (
 				872CE5DE1AC0B4AE0021143F /* ZMScrollableNavigationBar.app */,
-				872CE5F31AC0B4AE0021143F /* ZMScrollableNavigationBarTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		872CE5E01AC0B4AE0021143F /* ZMScrollableNavigationBar */ = {
+		872CE6071AC0D8D10021143F /* Test Project */ = {
 			isa = PBXGroup;
 			children = (
-				872CE5E31AC0B4AE0021143F /* AppDelegate.swift */,
-				872CE5E51AC0B4AE0021143F /* ViewController.swift */,
-				872CE5E71AC0B4AE0021143F /* Main.storyboard */,
-				872CE5EA1AC0B4AE0021143F /* Images.xcassets */,
-				872CE5EC1AC0B4AE0021143F /* LaunchScreen.xib */,
-				872CE5E11AC0B4AE0021143F /* Supporting Files */,
+				872CE6081AC0D8D10021143F /* AppDelegate.swift */,
+				872CE60F1AC0D8D10021143F /* ViewController.swift */,
+				872CE60B1AC0D8D10021143F /* Main.storyboard */,
+				872CE60D1AC0D8D10021143F /* Images.xcassets */,
+				872CE6091AC0D8D10021143F /* LaunchScreen.xib */,
+				872CE61B1AC0D8DC0021143F /* Supporting Files */,
+			);
+			path = "Test Project";
+			sourceTree = "<group>";
+		};
+		872CE6111AC0D8D10021143F /* ZMScrollableNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				872CE6121AC0D8D10021143F /* ZMScrollableNavigationController.swift */,
 			);
 			path = ZMScrollableNavigationBar;
 			sourceTree = "<group>";
 		};
-		872CE5E11AC0B4AE0021143F /* Supporting Files */ = {
+		872CE61B1AC0D8DC0021143F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				872CE5E21AC0B4AE0021143F /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		872CE5F61AC0B4AE0021143F /* ZMScrollableNavigationBarTests */ = {
-			isa = PBXGroup;
-			children = (
-				872CE5F91AC0B4AE0021143F /* ZMScrollableNavigationBarTests.swift */,
-				872CE5F71AC0B4AE0021143F /* Supporting Files */,
-			);
-			path = ZMScrollableNavigationBarTests;
-			sourceTree = "<group>";
-		};
-		872CE5F71AC0B4AE0021143F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				872CE5F81AC0B4AE0021143F /* Info.plist */,
+				872CE60E1AC0D8D10021143F /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -132,24 +104,6 @@
 			productReference = 872CE5DE1AC0B4AE0021143F /* ZMScrollableNavigationBar.app */;
 			productType = "com.apple.product-type.application";
 		};
-		872CE5F21AC0B4AE0021143F /* ZMScrollableNavigationBarTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 872CE6001AC0B4AE0021143F /* Build configuration list for PBXNativeTarget "ZMScrollableNavigationBarTests" */;
-			buildPhases = (
-				872CE5EF1AC0B4AE0021143F /* Sources */,
-				872CE5F01AC0B4AE0021143F /* Frameworks */,
-				872CE5F11AC0B4AE0021143F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				872CE5F51AC0B4AE0021143F /* PBXTargetDependency */,
-			);
-			name = ZMScrollableNavigationBarTests;
-			productName = ZMScrollableNavigationBarTests;
-			productReference = 872CE5F31AC0B4AE0021143F /* ZMScrollableNavigationBarTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,10 +115,6 @@
 				TargetAttributes = {
 					872CE5DD1AC0B4AE0021143F = {
 						CreatedOnToolsVersion = 6.2;
-					};
-					872CE5F21AC0B4AE0021143F = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 872CE5DD1AC0B4AE0021143F;
 					};
 				};
 			};
@@ -182,7 +132,6 @@
 			projectRoot = "";
 			targets = (
 				872CE5DD1AC0B4AE0021143F /* ZMScrollableNavigationBar */,
-				872CE5F21AC0B4AE0021143F /* ZMScrollableNavigationBarTests */,
 			);
 		};
 /* End PBXProject section */
@@ -192,16 +141,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				872CE5E91AC0B4AE0021143F /* Main.storyboard in Resources */,
-				872CE5EE1AC0B4AE0021143F /* LaunchScreen.xib in Resources */,
-				872CE5EB1AC0B4AE0021143F /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		872CE5F11AC0B4AE0021143F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				872CE6171AC0D8D10021143F /* Info.plist in Resources */,
+				872CE6161AC0D8D10021143F /* Images.xcassets in Resources */,
+				872CE6141AC0D8D10021143F /* LaunchScreen.xib in Resources */,
+				872CE6151AC0D8D10021143F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,44 +155,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				872CE5E61AC0B4AE0021143F /* ViewController.swift in Sources */,
-				872CE5E41AC0B4AE0021143F /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		872CE5EF1AC0B4AE0021143F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				872CE5FA1AC0B4AE0021143F /* ZMScrollableNavigationBarTests.swift in Sources */,
+				872CE61A1AC0D8D10021143F /* ZMScrollableNavigationController.swift in Sources */,
+				872CE6181AC0D8D10021143F /* ViewController.swift in Sources */,
+				872CE6131AC0D8D10021143F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		872CE5F51AC0B4AE0021143F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 872CE5DD1AC0B4AE0021143F /* ZMScrollableNavigationBar */;
-			targetProxy = 872CE5F41AC0B4AE0021143F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		872CE5E71AC0B4AE0021143F /* Main.storyboard */ = {
+		872CE6091AC0D8D10021143F /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				872CE5E81AC0B4AE0021143F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		872CE5EC1AC0B4AE0021143F /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				872CE5ED1AC0B4AE0021143F /* Base */,
+				872CE60A1AC0D8D10021143F /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		872CE60B1AC0D8D10021143F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				872CE60C1AC0D8D10021143F /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -336,9 +264,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ZMScrollableNavigationBar/Info.plist;
+				INFOPLIST_FILE = "Test Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -346,43 +276,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ZMScrollableNavigationBar/Info.plist;
+				INFOPLIST_FILE = "Test Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		872CE6011AC0B4AE0021143F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ZMScrollableNavigationBarTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZMScrollableNavigationBar.app/ZMScrollableNavigationBar";
-			};
-			name = Debug;
-		};
-		872CE6021AC0B4AE0021143F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ZMScrollableNavigationBarTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZMScrollableNavigationBar.app/ZMScrollableNavigationBar";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -405,14 +303,7 @@
 				872CE5FF1AC0B4AE0021143F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		872CE6001AC0B4AE0021143F /* Build configuration list for PBXNativeTarget "ZMScrollableNavigationBarTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				872CE6011AC0B4AE0021143F /* Debug */,
-				872CE6021AC0B4AE0021143F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
