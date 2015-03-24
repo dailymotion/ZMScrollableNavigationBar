@@ -6,6 +6,11 @@
 //  Copyright (c) 2015 Zedenem. All rights reserved.
 //
 
+/**
+ * This Swift class is not integrated into the target
+ * However it does exactly the same thing as the ObjC category on UINavigationController
+ */
+
 import UIKit
 
 let maxTopOffset: CGFloat = 0.0
@@ -39,8 +44,8 @@ extension UINavigationController {
       topOffset = min(max(topOffset, minTopOffset), maxTopOffset)
       if topOffset != self.topOffset {
         var frame = self.view.frame
-        frame.origin.y = CGFloat(topOffset)
-        frame.size.height = self.view.superview!.frame.size.height + CGFloat(-topOffset)
+        frame.origin.y = topOffset
+        frame.size.height = self.view.superview!.frame.size.height - topOffset
         self.view.frame = frame
       }
     }

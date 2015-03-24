@@ -13,7 +13,7 @@
 		872CE6161AC0D8D10021143F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 872CE60D1AC0D8D10021143F /* Images.xcassets */; };
 		872CE6171AC0D8D10021143F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 872CE60E1AC0D8D10021143F /* Info.plist */; };
 		872CE6181AC0D8D10021143F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872CE60F1AC0D8D10021143F /* ViewController.swift */; };
-		872CE61A1AC0D8D10021143F /* ZMScrollableNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872CE6121AC0D8D10021143F /* ZMScrollableNavigationController.swift */; };
+		872CE61F1AC119D80021143F /* UINavigationController+ZMScrollable.m in Sources */ = {isa = PBXBuildFile; fileRef = 872CE61E1AC119D80021143F /* UINavigationController+ZMScrollable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +25,9 @@
 		872CE60E1AC0D8D10021143F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		872CE60F1AC0D8D10021143F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		872CE6121AC0D8D10021143F /* ZMScrollableNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZMScrollableNavigationController.swift; sourceTree = "<group>"; };
+		872CE61C1AC119D80021143F /* ZMScrollableNavigationBar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZMScrollableNavigationBar-Bridging-Header.h"; sourceTree = "<group>"; };
+		872CE61D1AC119D80021143F /* UINavigationController+ZMScrollable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+ZMScrollable.h"; sourceTree = "<group>"; };
+		872CE61E1AC119D80021143F /* UINavigationController+ZMScrollable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+ZMScrollable.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,9 @@
 			isa = PBXGroup;
 			children = (
 				872CE6121AC0D8D10021143F /* ZMScrollableNavigationController.swift */,
+				872CE61D1AC119D80021143F /* UINavigationController+ZMScrollable.h */,
+				872CE61E1AC119D80021143F /* UINavigationController+ZMScrollable.m */,
+				872CE61C1AC119D80021143F /* ZMScrollableNavigationBar-Bridging-Header.h */,
 			);
 			path = ZMScrollableNavigationBar;
 			sourceTree = "<group>";
@@ -155,9 +161,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				872CE61A1AC0D8D10021143F /* ZMScrollableNavigationController.swift in Sources */,
 				872CE6181AC0D8D10021143F /* ViewController.swift in Sources */,
 				872CE6131AC0D8D10021143F /* AppDelegate.swift in Sources */,
+				872CE61F1AC119D80021143F /* UINavigationController+ZMScrollable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,10 +270,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Test Project/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZMScrollableNavigationBar/ZMScrollableNavigationBar-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -276,10 +285,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Test Project/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZMScrollableNavigationBar/ZMScrollableNavigationBar-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
