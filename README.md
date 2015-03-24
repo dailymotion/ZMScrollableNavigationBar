@@ -37,3 +37,8 @@ class ViewController: UIViewController, UIScrollViewDelegate {
   
 }
 ```
+
+## TODO
+
+- Handle Rotation
+- Show `UINavigationBar` again when user quickly swipes up
