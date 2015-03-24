@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jhi-RM-s1P">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Presented View-->
+        <scene sceneID="Cav-JV-4gm">
+            <objects>
+                <viewController id="mG6-Bl-0nz" customClass="PresentedViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l6v-Ue-iE0"/>
+                        <viewControllerLayoutGuide type="bottom" id="pYL-KM-TQU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7fA-hH-VVU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Presented View" id="4qD-Fj-tZN">
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="OAJ-yX-iEm">
+                            <connections>
+                                <action selector="close:" destination="mG6-Bl-0nz" id="Wrt-0u-NbT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kiS-Gj-cCT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3809" y="385"/>
+        </scene>
+        <!--Root View-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="ZMScrollableNavigationBar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -20,8 +45,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YUc-z6-d1n">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WheresWallyAtWembley_6.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="llp-Yh-PtY">
-                                        <rect key="frame" x="0.0" y="0.0" width="24" height="23"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WheresWallyAtWembley_6" translatesAutoresizingMaskIntoConstraints="NO" id="llp-Yh-PtY">
+                                        <rect key="frame" x="0.0" y="0.0" width="2953" height="2088"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -51,14 +76,40 @@
                                 </segments>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQN-61-1BE">
+                                <rect key="frame" x="481" y="112" width="83" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Tap to push">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Gnb-MM-TwH" kind="show" id="ra7-We-X2l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2y-2j-PN0">
+                                <rect key="frame" x="36" y="112" width="101" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Tap to present">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Fnj-mA-hep" kind="presentation" id="PMV-Tp-JJ1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="2vc-vr-eiJ" secondAttribute="trailing" id="6Dv-Yu-2jR"/>
                             <constraint firstItem="2vc-vr-eiJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="6ND-Gf-ux3"/>
+                            <constraint firstItem="T2y-2j-PN0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="Imx-cc-Xk4"/>
                             <constraint firstItem="vPv-Fp-GW6" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="JPM-Vj-buZ"/>
+                            <constraint firstItem="AQN-61-1BE" firstAttribute="top" secondItem="2vc-vr-eiJ" secondAttribute="bottom" constant="20" id="QK1-xf-1kJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AQN-61-1BE" secondAttribute="trailing" constant="20" id="QvC-Ek-oZM"/>
                             <constraint firstItem="2vc-vr-eiJ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="ZLN-Gq-3hC"/>
                             <constraint firstAttribute="trailing" secondItem="YUc-z6-d1n" secondAttribute="trailing" id="Zce-Dk-I95"/>
+                            <constraint firstItem="T2y-2j-PN0" firstAttribute="top" secondItem="2vc-vr-eiJ" secondAttribute="bottom" constant="20" id="adw-A8-Rhw"/>
                             <constraint firstAttribute="trailing" secondItem="vPv-Fp-GW6" secondAttribute="trailing" id="d3Z-90-4Dh"/>
                             <constraint firstItem="YUc-z6-d1n" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="ddS-5q-8gb"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="bottom" secondItem="YUc-z6-d1n" secondAttribute="bottom" id="eIT-bM-gyS"/>
@@ -66,14 +117,88 @@
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="vPv-Fp-GW6" secondAttribute="bottom" id="vPO-Vd-FPJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="qxj-7Q-w7E"/>
+                    <navigationItem key="navigationItem" title="Root View" id="qxj-7Q-w7E">
+                        <barButtonItem key="leftBarButtonItem" title="Tap to present" id="XyV-sl-e16">
+                            <connections>
+                                <segue destination="Fnj-mA-hep" kind="presentation" id="Org-yf-IgD"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Tap to push" id="ENG-u9-4OQ">
+                            <connections>
+                                <segue destination="Gnb-MM-TwH" kind="show" id="AxI-Lo-J5I"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="scrollView" destination="YUc-z6-d1n" id="l4n-jz-fAh"/>
+                        <outlet property="scrollView" destination="YUc-z6-d1n" id="PqI-8k-lNC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2209" y="1140"/>
+        </scene>
+        <!--Pushed View-->
+        <scene sceneID="5uv-6G-JUw">
+            <objects>
+                <viewController id="Gnb-MM-TwH" customClass="PushedViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b9V-F9-QqV"/>
+                        <viewControllerLayoutGuide type="bottom" id="bhc-c3-N3m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w4S-ph-b3Y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TU4-vo-scd">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WheresWallyAtWembley_6" translatesAutoresizingMaskIntoConstraints="NO" id="RDo-fa-ZLi">
+                                        <rect key="frame" x="0.0" y="0.0" width="2953" height="2088"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="RDo-fa-ZLi" firstAttribute="top" secondItem="TU4-vo-scd" secondAttribute="top" id="2sQ-Z8-8Vk"/>
+                                    <constraint firstAttribute="bottom" secondItem="RDo-fa-ZLi" secondAttribute="bottom" id="E9g-HQ-Ecu"/>
+                                    <constraint firstItem="RDo-fa-ZLi" firstAttribute="leading" secondItem="TU4-vo-scd" secondAttribute="leading" id="Jvf-D6-g61"/>
+                                    <constraint firstAttribute="trailing" secondItem="RDo-fa-ZLi" secondAttribute="trailing" id="XZc-yS-Xvq"/>
+                                    <constraint firstItem="RDo-fa-ZLi" firstAttribute="top" secondItem="TU4-vo-scd" secondAttribute="top" id="gOh-PZ-d3V"/>
+                                    <constraint firstAttribute="bottom" secondItem="RDo-fa-ZLi" secondAttribute="bottom" id="pGO-vf-EAJ"/>
+                                    <constraint firstItem="RDo-fa-ZLi" firstAttribute="leading" secondItem="TU4-vo-scd" secondAttribute="leading" id="u35-9o-he7"/>
+                                    <constraint firstAttribute="trailing" secondItem="RDo-fa-ZLi" secondAttribute="trailing" id="vkQ-Z2-S3p"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="Gnb-MM-TwH" id="RxQ-ed-aqd"/>
+                                </connections>
+                            </scrollView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ayt-Cs-TKO">
+                                <rect key="frame" x="0.0" y="64" width="600" height="29"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ayt-Cs-TKO" firstAttribute="top" secondItem="b9V-F9-QqV" secondAttribute="bottom" id="Fp0-v8-T1M"/>
+                            <constraint firstItem="TU4-vo-scd" firstAttribute="top" secondItem="b9V-F9-QqV" secondAttribute="top" id="Krt-2i-kzB"/>
+                            <constraint firstAttribute="trailing" secondItem="Ayt-Cs-TKO" secondAttribute="trailing" id="TL0-xf-Kbe"/>
+                            <constraint firstItem="bhc-c3-N3m" firstAttribute="bottom" secondItem="TU4-vo-scd" secondAttribute="bottom" id="W7o-De-msK"/>
+                            <constraint firstAttribute="trailing" secondItem="TU4-vo-scd" secondAttribute="trailing" id="rTf-gg-RYd"/>
+                            <constraint firstItem="TU4-vo-scd" firstAttribute="leading" secondItem="w4S-ph-b3Y" secondAttribute="leading" id="uxH-R6-qry"/>
+                            <constraint firstItem="Ayt-Cs-TKO" firstAttribute="leading" secondItem="w4S-ph-b3Y" secondAttribute="leading" id="vAA-0h-Fl5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pushed View" id="v1k-s4-uMN"/>
+                    <connections>
+                        <outlet property="scrollView" destination="TU4-vo-scd" id="OTB-Et-f9c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QhF-Xp-Fb9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2997" y="1140"/>
         </scene>
         <!--Item-->
         <scene sceneID="DIx-w7-HrE">
@@ -151,8 +276,30 @@
             </objects>
             <point key="canvasLocation" x="1377" y="1891"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="p3Y-SB-6cD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fnj-mA-hep" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="L6t-vX-eLD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mG6-Bl-0nz" kind="relationship" relationship="rootViewController" id="XEd-oR-Rwh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3nd-bH-KRY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2997" y="385"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="WheresWallyAtWembley_6.jpg" width="2953" height="2088"/>
+        <image name="WheresWallyAtWembley_6" width="2953" height="2088"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ra7-We-X2l"/>
+        <segue reference="PMV-Tp-JJ1"/>
+    </inferredMetricsTieBreakers>
 </document>

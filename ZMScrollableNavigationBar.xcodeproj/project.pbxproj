@@ -7,31 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		872CE6131AC0D8D10021143F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872CE6081AC0D8D10021143F /* AppDelegate.swift */; };
-		872CE6141AC0D8D10021143F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 872CE6091AC0D8D10021143F /* LaunchScreen.xib */; };
-		872CE6151AC0D8D10021143F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 872CE60B1AC0D8D10021143F /* Main.storyboard */; };
-		872CE6161AC0D8D10021143F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 872CE60D1AC0D8D10021143F /* Images.xcassets */; };
-		872CE6171AC0D8D10021143F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 872CE60E1AC0D8D10021143F /* Info.plist */; };
-		872CE6181AC0D8D10021143F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872CE60F1AC0D8D10021143F /* ViewController.swift */; };
-		872CE61F1AC119D80021143F /* UINavigationController+ZMScrollable.m in Sources */ = {isa = PBXBuildFile; fileRef = 872CE61E1AC119D80021143F /* UINavigationController+ZMScrollable.m */; };
+		87432AD61AC1F5D500E918A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87432AC61AC1F5D500E918A4 /* AppDelegate.m */; };
+		87432AD81AC1F5D500E918A4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87432AC81AC1F5D500E918A4 /* LaunchScreen.xib */; };
+		87432AD91AC1F5D500E918A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87432ACA1AC1F5D500E918A4 /* Main.storyboard */; };
+		87432ADA1AC1F5D500E918A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87432ACC1AC1F5D500E918A4 /* Images.xcassets */; };
+		87432ADC1AC1F5D500E918A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87432ACF1AC1F5D500E918A4 /* ViewController.m */; };
+		87432ADE1AC1F5D500E918A4 /* UINavigationController+ZMScrollable.m in Sources */ = {isa = PBXBuildFile; fileRef = 87432AD31AC1F5D500E918A4 /* UINavigationController+ZMScrollable.m */; };
+		87432AE11AC1F63800E918A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87432AE01AC1F63800E918A4 /* main.m */; };
+		87BA5F031AC21BFF0007AE75 /* PresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BA5F021AC21BFF0007AE75 /* PresentedViewController.m */; };
+		87BA5F061AC21F030007AE75 /* PushedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BA5F051AC21F030007AE75 /* PushedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		872CE5DE1AC0B4AE0021143F /* ZMScrollableNavigationBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZMScrollableNavigationBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		872CE6081AC0D8D10021143F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		872CE60A1AC0D8D10021143F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		872CE60C1AC0D8D10021143F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		872CE60D1AC0D8D10021143F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		872CE60E1AC0D8D10021143F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		872CE60F1AC0D8D10021143F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		872CE6121AC0D8D10021143F /* ZMScrollableNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZMScrollableNavigationController.swift; sourceTree = "<group>"; };
-		872CE61C1AC119D80021143F /* ZMScrollableNavigationBar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZMScrollableNavigationBar-Bridging-Header.h"; sourceTree = "<group>"; };
-		872CE61D1AC119D80021143F /* UINavigationController+ZMScrollable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+ZMScrollable.h"; sourceTree = "<group>"; };
-		872CE61E1AC119D80021143F /* UINavigationController+ZMScrollable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+ZMScrollable.m"; sourceTree = "<group>"; };
+		87432A9B1AC1F58900E918A4 /* ZMScrollableNavigationBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZMScrollableNavigationBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87432AC51AC1F5D500E918A4 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		87432AC61AC1F5D500E918A4 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		87432AC91AC1F5D500E918A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		87432ACB1AC1F5D500E918A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87432ACC1AC1F5D500E918A4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		87432ACD1AC1F5D500E918A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87432ACE1AC1F5D500E918A4 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		87432ACF1AC1F5D500E918A4 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		87432AD21AC1F5D500E918A4 /* UINavigationController+ZMScrollable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+ZMScrollable.h"; sourceTree = "<group>"; };
+		87432AD31AC1F5D500E918A4 /* UINavigationController+ZMScrollable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+ZMScrollable.m"; sourceTree = "<group>"; };
+		87432AE01AC1F63800E918A4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		87BA5F011AC21BFF0007AE75 /* PresentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentedViewController.h; sourceTree = "<group>"; };
+		87BA5F021AC21BFF0007AE75 /* PresentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentedViewController.m; sourceTree = "<group>"; };
+		87BA5F041AC21F030007AE75 /* PushedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushedViewController.h; sourceTree = "<group>"; };
+		87BA5F051AC21F030007AE75 /* PushedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		872CE5DB1AC0B4AE0021143F /* Frameworks */ = {
+		87432A981AC1F58900E918A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,65 +48,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		872CE5D51AC0B4AE0021143F = {
+		87432A921AC1F58900E918A4 = {
 			isa = PBXGroup;
 			children = (
-				872CE6071AC0D8D10021143F /* Test Project */,
-				872CE6111AC0D8D10021143F /* ZMScrollableNavigationBar */,
-				872CE5DF1AC0B4AE0021143F /* Products */,
+				87432AC41AC1F5D500E918A4 /* Test Project */,
+				87432AD11AC1F5D500E918A4 /* ZMScrollableNavigationBar */,
+				87432A9C1AC1F58900E918A4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		872CE5DF1AC0B4AE0021143F /* Products */ = {
+		87432A9C1AC1F58900E918A4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				872CE5DE1AC0B4AE0021143F /* ZMScrollableNavigationBar.app */,
+				87432A9B1AC1F58900E918A4 /* ZMScrollableNavigationBar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		872CE6071AC0D8D10021143F /* Test Project */ = {
+		87432AC41AC1F5D500E918A4 /* Test Project */ = {
 			isa = PBXGroup;
 			children = (
-				872CE6081AC0D8D10021143F /* AppDelegate.swift */,
-				872CE60F1AC0D8D10021143F /* ViewController.swift */,
-				872CE60B1AC0D8D10021143F /* Main.storyboard */,
-				872CE60D1AC0D8D10021143F /* Images.xcassets */,
-				872CE6091AC0D8D10021143F /* LaunchScreen.xib */,
-				872CE61B1AC0D8DC0021143F /* Supporting Files */,
+				87432AC51AC1F5D500E918A4 /* AppDelegate.h */,
+				87432AC61AC1F5D500E918A4 /* AppDelegate.m */,
+				87432ACE1AC1F5D500E918A4 /* ViewController.h */,
+				87432ACF1AC1F5D500E918A4 /* ViewController.m */,
+				87BA5F041AC21F030007AE75 /* PushedViewController.h */,
+				87BA5F051AC21F030007AE75 /* PushedViewController.m */,
+				87BA5F011AC21BFF0007AE75 /* PresentedViewController.h */,
+				87BA5F021AC21BFF0007AE75 /* PresentedViewController.m */,
+				87432ACA1AC1F5D500E918A4 /* Main.storyboard */,
+				87432AC81AC1F5D500E918A4 /* LaunchScreen.xib */,
+				87432ACC1AC1F5D500E918A4 /* Images.xcassets */,
+				87432AE01AC1F63800E918A4 /* main.m */,
+				87432ACD1AC1F5D500E918A4 /* Info.plist */,
 			);
 			path = "Test Project";
 			sourceTree = "<group>";
 		};
-		872CE6111AC0D8D10021143F /* ZMScrollableNavigationBar */ = {
+		87432AD11AC1F5D500E918A4 /* ZMScrollableNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
-				872CE6121AC0D8D10021143F /* ZMScrollableNavigationController.swift */,
-				872CE61D1AC119D80021143F /* UINavigationController+ZMScrollable.h */,
-				872CE61E1AC119D80021143F /* UINavigationController+ZMScrollable.m */,
-				872CE61C1AC119D80021143F /* ZMScrollableNavigationBar-Bridging-Header.h */,
+				87432AD21AC1F5D500E918A4 /* UINavigationController+ZMScrollable.h */,
+				87432AD31AC1F5D500E918A4 /* UINavigationController+ZMScrollable.m */,
 			);
 			path = ZMScrollableNavigationBar;
-			sourceTree = "<group>";
-		};
-		872CE61B1AC0D8DC0021143F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				872CE60E1AC0D8D10021143F /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		872CE5DD1AC0B4AE0021143F /* ZMScrollableNavigationBar */ = {
+		87432A9A1AC1F58900E918A4 /* ZMScrollableNavigationBar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 872CE5FD1AC0B4AE0021143F /* Build configuration list for PBXNativeTarget "ZMScrollableNavigationBar" */;
+			buildConfigurationList = 87432ABE1AC1F58A00E918A4 /* Build configuration list for PBXNativeTarget "ZMScrollableNavigationBar" */;
 			buildPhases = (
-				872CE5DA1AC0B4AE0021143F /* Sources */,
-				872CE5DB1AC0B4AE0021143F /* Frameworks */,
-				872CE5DC1AC0B4AE0021143F /* Resources */,
+				87432A971AC1F58900E918A4 /* Sources */,
+				87432A981AC1F58900E918A4 /* Frameworks */,
+				87432A991AC1F58900E918A4 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -107,24 +111,24 @@
 			);
 			name = ZMScrollableNavigationBar;
 			productName = ZMScrollableNavigationBar;
-			productReference = 872CE5DE1AC0B4AE0021143F /* ZMScrollableNavigationBar.app */;
+			productReference = 87432A9B1AC1F58900E918A4 /* ZMScrollableNavigationBar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		872CE5D61AC0B4AE0021143F /* Project object */ = {
+		87432A931AC1F58900E918A4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = Zedenem;
 				TargetAttributes = {
-					872CE5DD1AC0B4AE0021143F = {
+					87432A9A1AC1F58900E918A4 = {
 						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
-			buildConfigurationList = 872CE5D91AC0B4AE0021143F /* Build configuration list for PBXProject "ZMScrollableNavigationBar" */;
+			buildConfigurationList = 87432A961AC1F58900E918A4 /* Build configuration list for PBXProject "ZMScrollableNavigationBar" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -132,56 +136,58 @@
 				en,
 				Base,
 			);
-			mainGroup = 872CE5D51AC0B4AE0021143F;
-			productRefGroup = 872CE5DF1AC0B4AE0021143F /* Products */;
+			mainGroup = 87432A921AC1F58900E918A4;
+			productRefGroup = 87432A9C1AC1F58900E918A4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				872CE5DD1AC0B4AE0021143F /* ZMScrollableNavigationBar */,
+				87432A9A1AC1F58900E918A4 /* ZMScrollableNavigationBar */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		872CE5DC1AC0B4AE0021143F /* Resources */ = {
+		87432A991AC1F58900E918A4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				872CE6171AC0D8D10021143F /* Info.plist in Resources */,
-				872CE6161AC0D8D10021143F /* Images.xcassets in Resources */,
-				872CE6141AC0D8D10021143F /* LaunchScreen.xib in Resources */,
-				872CE6151AC0D8D10021143F /* Main.storyboard in Resources */,
+				87432ADA1AC1F5D500E918A4 /* Images.xcassets in Resources */,
+				87432AD81AC1F5D500E918A4 /* LaunchScreen.xib in Resources */,
+				87432AD91AC1F5D500E918A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		872CE5DA1AC0B4AE0021143F /* Sources */ = {
+		87432A971AC1F58900E918A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				872CE6181AC0D8D10021143F /* ViewController.swift in Sources */,
-				872CE6131AC0D8D10021143F /* AppDelegate.swift in Sources */,
-				872CE61F1AC119D80021143F /* UINavigationController+ZMScrollable.m in Sources */,
+				87432AE11AC1F63800E918A4 /* main.m in Sources */,
+				87432ADC1AC1F5D500E918A4 /* ViewController.m in Sources */,
+				87BA5F061AC21F030007AE75 /* PushedViewController.m in Sources */,
+				87BA5F031AC21BFF0007AE75 /* PresentedViewController.m in Sources */,
+				87432AD61AC1F5D500E918A4 /* AppDelegate.m in Sources */,
+				87432ADE1AC1F5D500E918A4 /* UINavigationController+ZMScrollable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		872CE6091AC0D8D10021143F /* LaunchScreen.xib */ = {
+		87432AC81AC1F5D500E918A4 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				872CE60A1AC0D8D10021143F /* Base */,
+				87432AC91AC1F5D500E918A4 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
-		872CE60B1AC0D8D10021143F /* Main.storyboard */ = {
+		87432ACA1AC1F5D500E918A4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				872CE60C1AC0D8D10021143F /* Base */,
+				87432ACB1AC1F5D500E918A4 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -189,7 +195,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		872CE5FB1AC0B4AE0021143F /* Debug */ = {
+		87432ABC1AC1F58A00E918A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -227,11 +233,11 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		872CE5FC1AC0B4AE0021143F /* Release */ = {
+		87432ABD1AC1F58A00E918A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -262,61 +268,53 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		872CE5FE1AC0B4AE0021143F /* Debug */ = {
+		87432ABF1AC1F58A00E918A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Test Project/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ZMScrollableNavigationBar/ZMScrollableNavigationBar-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		872CE5FF1AC0B4AE0021143F /* Release */ = {
+		87432AC01AC1F58A00E918A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Test Project/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ZMScrollableNavigationBar/ZMScrollableNavigationBar-Bridging-Header.h";
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		872CE5D91AC0B4AE0021143F /* Build configuration list for PBXProject "ZMScrollableNavigationBar" */ = {
+		87432A961AC1F58900E918A4 /* Build configuration list for PBXProject "ZMScrollableNavigationBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				872CE5FB1AC0B4AE0021143F /* Debug */,
-				872CE5FC1AC0B4AE0021143F /* Release */,
+				87432ABC1AC1F58A00E918A4 /* Debug */,
+				87432ABD1AC1F58A00E918A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		872CE5FD1AC0B4AE0021143F /* Build configuration list for PBXNativeTarget "ZMScrollableNavigationBar" */ = {
+		87432ABE1AC1F58A00E918A4 /* Build configuration list for PBXNativeTarget "ZMScrollableNavigationBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				872CE5FE1AC0B4AE0021143F /* Debug */,
-				872CE5FF1AC0B4AE0021143F /* Release */,
+				87432ABF1AC1F58A00E918A4 /* Debug */,
+				87432AC01AC1F58A00E918A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 872CE5D61AC0B4AE0021143F /* Project object */;
+	rootObject = 87432A931AC1F58900E918A4 /* Project object */;
 }

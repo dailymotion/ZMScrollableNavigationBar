@@ -9,9 +9,12 @@
 #import "UINavigationController+ZMScrollable.h"
 
 static const CGFloat maxTopOffset = 0.0;
-static const CGFloat minTopOffset = -44.0;
 
 @implementation UINavigationController (ZMScrollable)
+
+- (CGFloat)minTopOffset {
+  return - CGRectGetHeight(self.navigationBar.frame);
+}
 
 - (void)setTopOffset:(CGFloat)newTopOffset {
   if (self.navigationBarHidden) {
@@ -33,7 +36,7 @@ static const CGFloat minTopOffset = -44.0;
   // Adjust so that the view doesn't scroll below the UINavigationBar before it starts hiding
   topOffset -= CGRectGetHeight(self.navigationBar.frame);
   
-  topOffset = MIN(MAX(topOffset, minTopOffset), maxTopOffset);
+  topOffset = MIN(MAX(topOffset, [self minTopOffset]), maxTopOffset);
   
   if (topOffset != self.topOffset) {
     CGRect frame = self.view.frame;
