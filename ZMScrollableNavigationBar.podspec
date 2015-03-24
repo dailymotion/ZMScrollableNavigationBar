@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.source_files = 'ZMScrollableNavigationController.swift'
+  s.source_files = './*.swift'
   # s.resource_bundles = {'ZMScrollableNavigationBar' => ['Pod/Assets/*.png']}
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
