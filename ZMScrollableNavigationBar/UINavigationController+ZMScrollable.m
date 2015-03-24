@@ -41,7 +41,6 @@ static const CGFloat minTopOffset = -44.0;
     frame.size.height = CGRectGetHeight(self.view.superview.frame) - topOffset;
     self.view.frame = frame;
   }
-  
 }
 
 - (CGFloat)topOffset {

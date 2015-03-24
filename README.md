@@ -1,3 +1,7 @@
+[![Version](https://img.shields.io/cocoapods/v/ZMScrollableNavigationBar.svg?style=flat)](http://cocoapods.org/pods/ZMScrollableNavigationBar)
+[![License](https://img.shields.io/cocoapods/l/ZMScrollableNavigationBar.svg?style=flat)](http://cocoapods.org/pods/ZMScrollableNavigationBar)
+[![Platform](https://img.shields.io/cocoapods/p/ZMScrollableNavigationBar.svg?style=flat)](http://cocoapods.org/pods/ZMScrollableNavigationBar)
+
 # ZMScrollableNavigationBar
 A UINavigationController subclass that allows the UINavigationBar to scroll with the content (iOS 8 only)
 
