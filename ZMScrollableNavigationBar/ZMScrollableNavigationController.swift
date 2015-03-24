@@ -8,27 +8,23 @@
 
 import UIKit
 
-class ZMScrollableNavigationController: UINavigationController {
-  var maxTopOffset = 0.0
-  var minTopOffset = -44.0
-  var topOffset: Double = 0.0 {
-    didSet {
-      switch UIDevice.currentDevice().systemVersion.compare("8.0.0", options: NSStringCompareOptions.NumericSearch) {
-      case .OrderedSame, .OrderedDescending:
-        break
-      case .OrderedAscending:
-        // iOS < 8.0.0 not supported at the time
-        topOffset = 0.0
-      }
-      topOffset = min(max(topOffset, minTopOffset), maxTopOffset)
-      if topOffset != oldValue {
-        println("Top Offset: \(topOffset)")
+let maxTopOffset: CGFloat = 0.0
+let minTopOffset: CGFloat = -44.0
+
+extension UINavigationController {
+  var topOffset: CGFloat {
+    set(newTopOffset) {
+      var topOffset = min(max(newTopOffset, minTopOffset), maxTopOffset)
+      if topOffset != self.topOffset {
         var frame = self.view.frame
         frame.origin.y = CGFloat(topOffset)
-        frame.size.height = self.view.window!.frame.size.height + CGFloat(-topOffset)
+        frame.size.height = self.view.superview!.frame.size.height + CGFloat(-topOffset)
         println("New Frame: " + NSStringFromCGRect(self.view.frame))
         self.view.frame = frame
       }
+    }
+    get {
+      return self.view.frame.origin.y
     }
   }
 }

@@ -10,11 +10,15 @@ import UIKit
 
 class ViewController: UIViewController, UIScrollViewDelegate {
   
+  @IBOutlet weak var scrollView: UIScrollView!
+  
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    self.navigationController!.topOffset = -scrollView.contentOffset.y
+  }
+  
   func scrollViewDidScroll(scrollView: UIScrollView) {
-    if self.navigationController!.isKindOfClass(ZMScrollableNavigationController) {
-      let scrollableNavigationController = self.navigationController as ZMScrollableNavigationController
-      scrollableNavigationController.topOffset = -Double(scrollView.contentOffset.y)
-    }
+    self.navigationController!.topOffset = -scrollView.contentOffset.y
   }
   
 }
