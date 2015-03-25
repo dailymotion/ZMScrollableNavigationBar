@@ -9,7 +9,7 @@ A UINavigationController subclass that allows the UINavigationBar to scroll with
 
 ###With CocoaPods
 
-Just add `pod 'ZMScrollableNavigationBar', '~> 0.4.0'` to your Podfile and run
+Just add `pod 'ZMScrollableNavigationBar', '~> 0.7.0'` to your Podfile and run
 
 ```
 $> pod install
@@ -21,24 +21,16 @@ Just drag'n'drop `ZMScrollableNavigationController.swift` into your XCode projec
 
 ## Usage
 
-Using a `UIScrollView` in your `UIViewController`, you can simply hook up the scroll to the `UINavigationBar` animation. Here is the simplest **Swift** class to do this:
+Using a `UIScrollView` in your `UIViewController`, you can simply hook up the scroll to the `UINavigationBar` animation. Here are the two methods you need to implement:
 
 ```
-class ViewController: UIViewController, UIScrollViewDelegate {
-  
-  @IBOutlet weak var scrollView: UIScrollView!
-  
-  // Update the topOffset when the view appears
-  override func viewWillAppear(animated: Bool) {
-    super.viewWillAppear(animated)
-    self.navigationController!.topOffset = -scrollView.contentOffset.y
-  }
-  
-  // Update the topOffset when the scrollView scrolls
-  func scrollViewDidScroll(scrollView: UIScrollView) {
-    self.navigationController!.topOffset = -scrollView.contentOffset.y
-  }
-  
+- (void)viewDidLayoutSubviews {
+  [super viewDidLayoutSubviews];
+  self.navigationController.topOffset = -self.scrollView.contentOffset.y;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+  self.navigationController.topOffset = -scrollView.contentOffset.y;
 }
 ```
 
