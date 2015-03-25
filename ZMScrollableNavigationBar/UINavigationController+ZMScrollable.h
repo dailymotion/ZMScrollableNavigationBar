@@ -12,4 +12,8 @@
 
 @property(nonatomic, assign) CGFloat topOffset;
 
+// Resets the top offset to its original value (needed when moving from a controller using this category
+// to another that is not)
+- (void)resetTopOffset;
+
 @end

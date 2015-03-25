@@ -50,4 +50,15 @@ static const CGFloat maxTopOffset = 0.0;
   return CGRectGetMinY(self.view.frame);
 }
 
+- (void)resetTopOffset {
+  CGFloat defaultTopOffset = CGRectGetHeight(self.navigationBar.frame);
+  
+  // Adjust to the presence of a UIStatusBar
+  if (![UIApplication sharedApplication].statusBarHidden) {
+    defaultTopOffset += CGRectGetHeight([UIApplication sharedApplication].statusBarFrame);
+  }
+  
+  self.topOffset = defaultTopOffset;
+}
+
 @end
