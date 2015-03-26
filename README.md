@@ -9,7 +9,7 @@ A UINavigationController subclass that allows the UINavigationBar to scroll with
 
 ###With CocoaPods
 
-Just add `pod 'ZMScrollableNavigationBar', '~> 0.7.0'` to your Podfile and run
+Just add `pod 'ZMScrollableNavigationBar', '~> 1.0'` to your Podfile and run
 
 ```
 $> pod install
@@ -17,7 +17,7 @@ $> pod install
 
 ###Without CocoaPods
 
-Just drag'n'drop `ZMScrollableNavigationController.swift` into your XCode project.
+Just drag'n'drop `UINavigationController+ZMScrollable.h` and `UINavigationController+ZMScrollable.m` into your XCode project.
 
 ## Usage
 
@@ -32,6 +32,12 @@ Using a `UIScrollView` in your `UIViewController`, you can simply hook up the sc
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
   self.navigationController.topOffset = -scrollView.contentOffset.y;
 }
+```
+
+ZMScrollableNavigationBar also provides a method to reset the navigation bar's offset (for example when another view is pushed). Just call:
+
+```
+[self.navigationController resetTopOffset];
 ```
 
 ## TODO
