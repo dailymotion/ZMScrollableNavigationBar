@@ -43,6 +43,18 @@ static const CGFloat maxTopOffset = 0.0;
     frame.origin.y = topOffset;
     frame.size.height = CGRectGetHeight(self.view.superview.frame) - topOffset;
     self.view.frame = frame;
+    
+    // Create a Blur View and apply it on top of the UINavigationBar
+    UIView *view = [self.view viewWithTag:101010];
+    if (!view) {
+      UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
+      UIVisualEffectView *visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
+      visualEffectView.tag = 101010;
+      [self.view addSubview:visualEffectView];
+      view = visualEffectView;
+    }
+    view.frame = self.navigationBar.frame;
+    view.alpha = fabsf(topOffset/self.minTopOffset);
   }
 }
 
