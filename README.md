@@ -9,7 +9,7 @@ A UINavigationController subclass that allows the UINavigationBar to scroll with
 
 ###With CocoaPods
 
-Just add `pod 'ZMScrollableNavigationBar', '~> 1.0'` to your Podfile and run
+Just add `pod 'ZMScrollableNavigationBar', '~> 1.0.1'` to your Podfile and run
 
 ```
 $> pod install
