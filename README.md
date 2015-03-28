@@ -7,7 +7,7 @@ A UINavigationController subclass that allows the UINavigationBar to scroll with
 
 Click on the image to see a video preview:
 
-[![Screenshot](./Screenshots/ZMScrollableNavigationBarScreenshot.png)](http://www.dailymotion.com/embed/video/x2ku8aq)
+[![Screenshot](./Screenshots/ZMScrollableNavigationBarScreenshot.png)](http://www.dailymotion.com/video/x2ku8aq)
 
 ## Installation
 
