@@ -5,7 +5,9 @@
 # ZMScrollableNavigationBar
 A UINavigationController subclass that allows the UINavigationBar to scroll with the content (iOS 8 only)
 
-<iframe frameborder="0" width="480" height="270" src="//www.dailymotion.com/embed/video/x2ku8aq" allowfullscreen></iframe><br /><a href="http://www.dailymotion.com/video/x2ku8aq" target="_blank"></a>
+[Link to Video Preview](http://www.dailymotion.com/video/x2ku8aq)
+
+<iframe frameborder="0" width="480" height="270" src="//www.dailymotion.com/embed/video/x2ku8aq" allowfullscreen></iframe><br />
 
 ## Installation
 
