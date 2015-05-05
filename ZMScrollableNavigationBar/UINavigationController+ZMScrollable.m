@@ -67,7 +67,7 @@ static const CGFloat maxTopOffset = 0.0;
       viewFrame.size.height += CGRectGetHeight([UIApplication sharedApplication].statusBarFrame);
     }
     view.frame = viewFrame;
-    view.alpha = fabsf(topOffset/self.minTopOffset);
+    view.alpha = fabs(topOffset/self.minTopOffset);
   }
 }
 
