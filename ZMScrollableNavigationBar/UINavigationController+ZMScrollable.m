@@ -38,26 +38,28 @@ static const CGFloat maxTopOffset = 0.0;
   
   topOffset = MIN(MAX(topOffset, [self minTopOffset]), maxTopOffset);
   
+  
+  // Create a Blur View and apply it on top of the UINavigationBar
+  UIView *blurView = [self.view viewWithTag:101010];
+  
   if (topOffset != self.topOffset) {
     CGRect frame = self.view.frame;
     frame.origin.y = topOffset;
     frame.size.height = CGRectGetHeight(self.view.superview.frame) - topOffset;
     self.view.frame = frame;
     
-    // Create a Blur View and apply it on top of the UINavigationBar
-    UIView *view = [self.view viewWithTag:101010];
-    if (!view) {
+    if (!blurView) {
       if (self.navigationBar.barTintColor) {
-        view = [[UIView alloc] initWithFrame:CGRectZero];
-        view.backgroundColor = self.navigationBar.barTintColor;
-        view.tag = 101010;
-        [self.view addSubview:view];
+        blurView = [[UIView alloc] initWithFrame:CGRectZero];
+        blurView.backgroundColor = self.navigationBar.barTintColor;
+        blurView.tag = 101010;
+        [self.view addSubview:blurView];
       } else {
         UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
         UIVisualEffectView *visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
         visualEffectView.tag = 101010;
         [self.view addSubview:visualEffectView];
-        view = visualEffectView;
+        blurView = visualEffectView;
       }
     }
     
@@ -66,9 +68,11 @@ static const CGFloat maxTopOffset = 0.0;
       viewFrame.origin.y -= CGRectGetHeight([UIApplication sharedApplication].statusBarFrame);
       viewFrame.size.height += CGRectGetHeight([UIApplication sharedApplication].statusBarFrame);
     }
-    view.frame = viewFrame;
-    view.alpha = fabs(topOffset/self.minTopOffset);
+    blurView.frame = viewFrame;
   }
+  
+  // Always reset the blurView's alpha to avoid edge cases when the scroll is updated while the blurView is not shown
+  blurView.alpha = fabs(topOffset/self.minTopOffset);
 }
 
 - (CGFloat)topOffset {
