@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ZMScrollableNavigationBar"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "A UINavigationController category that allows the UINavigationBar to scroll with the content (iOS 8 only)."
 
   s.homepage     = "https://github.com/Zedenem/ZMScrollableNavigationBar"
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, '7.0'
 
-  s.source       = { :git => "https://github.com/Zedenem/ZMScrollableNavigationBar.git", :tag => "1.0.1" }
+  s.source       = { :git => "https://github.com/Zedenem/ZMScrollableNavigationBar.git", :tag => "1.0.2" }
 
   s.source_files  = 'ZMScrollableNavigationBar/*.{h,m}'
   
